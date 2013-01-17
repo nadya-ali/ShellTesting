@@ -21,8 +21,8 @@ def run () :
 	currentCarouselPanels = defaultCarouselPanels = 7
 	defaultFloorPanels = 6
 	WidgetSet = (16, 9, 2, 2)
-	if model=='GT-I9100' or model=='m0' or model=='GT-N7000' or model=='t03g' or float(andr)<2.3:
-		WidgetSet += (0, -1, 0, 0)
+	if model=='GT-I9100' or model=='m0' or model=='GT-N7000' or model=='t03g' or 2.3 > float(andr):
+		WidgetSet = (16, 8, 2, 2)
 	print 'starting test'
 	mfuncs.mAct('BACK', 2)
 	time.sleep(1)
